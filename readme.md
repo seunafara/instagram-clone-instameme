@@ -15,11 +15,13 @@ If you discover a security vulnerability within this application, please send an
 ## What's working?
 UI design added for Home <br>
 UI design added for Profile <br>
+Home Users Post Feeds <br>
+Upload new posts <br>
+User Profile setup <br>
 
 
 ## What's Pending?
 Simple landing, login and registration page design <br>
-Home Users Post Feeds <br>
-Upload new posts <br>
-Frontend validation when adding post (must contain caption) <br>
-User Profile setup <br>
+Like functionality <br>
+Infinite Scroll <br>
+

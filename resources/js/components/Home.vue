@@ -1,15 +1,15 @@
 <template>
     <div class="container">
-        <div class="instagram-feed">
+        <div class="instagram-feed" v-for="photo in photos" :key="photos.id">
             <section class="instagram-username">
                 <div class="instagram-image">
                     <a href="#"
                     ><img
-                            src="https://i1.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1"
-                    /></a>
+                            :src="'/img/profile/' + photo.user.photo"
+                        /></a>
                 </div>
                 <div class="insta-id">
-                    <a href="#">obavigo</a>
+                    <p>{{photo.user.username}}</p>
                 </div>
             </section>
 
@@ -18,28 +18,26 @@
             <section class="instagram-post">
                 <img
                         class="img-responsive"
-                        src="https://www.todaysparent.com/wp-content/uploads/2017/06/when-your-kid-becomes-a-meme-1024x576-1497986561.jpg"
+                        :src="'/img/photo/' + photo.photo"
                 />
             </section>
             <section class="btn-group">
                 <button type="button" class="btn-love">
-                    <i class="far fa-heart fa-lg"></i>
+                    <i class="material-icons">favorite_border</i>
                 </button>
                 <!-- <button type="button" class="btn-comment">
                     <i class="far fa-comment fa-lg"></i>
                   </button> -->
-                <button type="button" class="btn-share">
-                    <i class="fas fa-share-alt fa-lg "></i>
-                </button>
+<!--                <button type="button" class="btn-share">-->
+<!--                    <i class="fas fa-share-alt fa-lg "></i>-->
+<!--                </button>-->
             </section>
             <section class="caption">
-                <p class="insta-like">20 likes</p>
+                <p class="insta-like">{{photo.likes}} likes</p>
 
                 <p>
-                    <b><a class="insta-id" href="#">obavigo</a></b>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                    rutrum, purus ut consequat convallis, nulla nisl tincidunt
-                    nulla, sed pulvinar.
+                    <b><a class="insta-id" href="#">{{photo.user.username}}</a></b>
+                   {{photo.caption}}
                 </p>
                 <p class="time">5 minutes ago</p>
             </section>
@@ -49,8 +47,25 @@
 
 <script>
     export default {
+        data(){
+            return {
+                photos: {}
+            }
+        },
+        methods: {
+            loadPhotos(){
+
+                axios.get('api/photo')
+                    .then(({data}) => {(this.photos = data.data);})
+                    .catch((err)=>{
+                        console.log(err)
+                    });
+            },
+        },
         mounted() {
-            console.log('Component mounted.')
+            this.$Progress.start();
+            this.loadPhotos();
+            this.$Progress.finish();
         }
     }
 </script>
