@@ -2080,6 +2080,184 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -37677,20 +37855,362 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-header" }, [
-              _vm._v("Profile Component")
+    return _c("div", [
+      _c("header", [
+        _c("div", { staticClass: "insta-profile-container" }, [
+          _c("div", { staticClass: "profile" }, [
+            _c("div", { staticClass: "profile-image" }, [
+              _c("img", {
+                attrs: {
+                  src:
+                    "https://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=152&h=152&fit=crop&crop=faces",
+                  alt: ""
+                }
+              })
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
+            _c("div", { staticClass: "profile-user-settings" }, [
+              _c("h1", { staticClass: "profile-user-name" }, [
+                _vm._v("obavigo")
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                { staticClass: "insta-btn profile-edit-insta-btn" },
+                [_vm._v("\n               Edit Profile\n             ")]
               )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "profile-stats" }, [
+              _c("ul", [
+                _c("li", [
+                  _c("span", { staticClass: "profile-stat-count" }, [
+                    _vm._v("164")
+                  ]),
+                  _vm._v(" posts")
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("span", { staticClass: "profile-stat-count" }, [
+                    _vm._v("188")
+                  ]),
+                  _vm._v(" followers")
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("span", { staticClass: "profile-stat-count" }, [
+                    _vm._v("206")
+                  ]),
+                  _vm._v(" following")
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "profile-bio" }, [
+              _c("p", [
+                _c("span", { staticClass: "profile-real-name" }, [
+                  _vm._v("Jane Doe")
+                ]),
+                _vm._v(
+                  " Lorem ipsum\n               dolor sit, amet consectetur adipisicing elit 📷✈️🏕️\n             "
+                )
+              ])
             ])
           ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("main", [
+        _c("div", { staticClass: "insta-profile-container" }, [
+          _c("div", { staticClass: "gallery" }, [
+            _c(
+              "div",
+              { staticClass: "gallery-item", attrs: { tabindex: "0" } },
+              [
+                _c("img", {
+                  staticClass: "gallery-image",
+                  attrs: {
+                    src:
+                      "https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop",
+                    alt: ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "gallery-item-info" }, [
+                  _c("ul", [
+                    _c("li", { staticClass: "gallery-item-likes" }, [
+                      _c("span", { staticClass: "visually-hidden" }, [
+                        _vm._v("Likes:")
+                      ]),
+                      _c("i", {
+                        staticClass: "fas fa-heart",
+                        attrs: { "aria-hidden": "true" }
+                      }),
+                      _vm._v(" 56\n              ")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "gallery-item-comments" }, [
+                      _c("span", { staticClass: "visually-hidden" }, [
+                        _vm._v("Comments:")
+                      ]),
+                      _c("i", {
+                        staticClass: "fas fa-comment",
+                        attrs: { "aria-hidden": "true" }
+                      }),
+                      _vm._v(" 2\n              ")
+                    ])
+                  ])
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "gallery-item", attrs: { tabindex: "0" } },
+              [
+                _c("img", {
+                  staticClass: "gallery-image",
+                  attrs: {
+                    src:
+                      "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=500&h=500&fit=crop",
+                    alt: ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "gallery-item-type" }, [
+                  _c("span", { staticClass: "visually-hidden" }, [
+                    _vm._v("Gallery")
+                  ]),
+                  _c("i", {
+                    staticClass: "fas fa-clone",
+                    attrs: { "aria-hidden": "true" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "gallery-item-info" }, [
+                  _c("ul", [
+                    _c("li", { staticClass: "gallery-item-likes" }, [
+                      _c("span", { staticClass: "visually-hidden" }, [
+                        _vm._v("Likes:")
+                      ]),
+                      _c("i", {
+                        staticClass: "fas fa-heart",
+                        attrs: { "aria-hidden": "true" }
+                      }),
+                      _vm._v(" 42\n              ")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "gallery-item-comments" }, [
+                      _c("span", { staticClass: "visually-hidden" }, [
+                        _vm._v("Comments:")
+                      ]),
+                      _c("i", {
+                        staticClass: "fas fa-comment",
+                        attrs: { "aria-hidden": "true" }
+                      }),
+                      _vm._v(" 1\n              ")
+                    ])
+                  ])
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "gallery-item", attrs: { tabindex: "0" } },
+              [
+                _c("img", {
+                  staticClass: "gallery-image",
+                  attrs: {
+                    src:
+                      "https://images.unsplash.com/photo-1502630859934-b3b41d18206c?w=500&h=500&fit=crop",
+                    alt: ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "gallery-item-type" }, [
+                  _c("span", { staticClass: "visually-hidden" }, [
+                    _vm._v("Video")
+                  ]),
+                  _c("i", {
+                    staticClass: "fas fa-video",
+                    attrs: { "aria-hidden": "true" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "gallery-item-info" }, [
+                  _c("ul", [
+                    _c("li", { staticClass: "gallery-item-likes" }, [
+                      _c("span", { staticClass: "visually-hidden" }, [
+                        _vm._v("Likes:")
+                      ]),
+                      _c("i", {
+                        staticClass: "fas fa-heart",
+                        attrs: { "aria-hidden": "true" }
+                      }),
+                      _vm._v(" 38\n              ")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "gallery-item-comments" }, [
+                      _c("span", { staticClass: "visually-hidden" }, [
+                        _vm._v("Comments:")
+                      ]),
+                      _c("i", {
+                        staticClass: "fas fa-comment",
+                        attrs: { "aria-hidden": "true" }
+                      }),
+                      _vm._v(" 0\n              ")
+                    ])
+                  ])
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "gallery-item", attrs: { tabindex: "0" } },
+              [
+                _c("img", {
+                  staticClass: "gallery-image",
+                  attrs: {
+                    src:
+                      "https://images.unsplash.com/photo-1498471731312-b6d2b8280c61?w=500&h=500&fit=crop",
+                    alt: ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "gallery-item-type" }, [
+                  _c("span", { staticClass: "visually-hidden" }, [
+                    _vm._v("Gallery")
+                  ]),
+                  _c("i", {
+                    staticClass: "fas fa-clone",
+                    attrs: { "aria-hidden": "true" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "gallery-item-info" }, [
+                  _c("ul", [
+                    _c("li", { staticClass: "gallery-item-likes" }, [
+                      _c("span", { staticClass: "visually-hidden" }, [
+                        _vm._v("Likes:")
+                      ]),
+                      _c("i", {
+                        staticClass: "fas fa-heart",
+                        attrs: { "aria-hidden": "true" }
+                      }),
+                      _vm._v(" 47\n              ")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "gallery-item-comments" }, [
+                      _c("span", { staticClass: "visually-hidden" }, [
+                        _vm._v("Comments:")
+                      ]),
+                      _c("i", {
+                        staticClass: "fas fa-comment",
+                        attrs: { "aria-hidden": "true" }
+                      }),
+                      _vm._v(" 1\n              ")
+                    ])
+                  ])
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "gallery-item", attrs: { tabindex: "0" } },
+              [
+                _c("img", {
+                  staticClass: "gallery-image",
+                  attrs: {
+                    src:
+                      "https://images.unsplash.com/photo-1515023115689-589c33041d3c?w=500&h=500&fit=crop",
+                    alt: ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "gallery-item-info" }, [
+                  _c("ul", [
+                    _c("li", { staticClass: "gallery-item-likes" }, [
+                      _c("span", { staticClass: "visually-hidden" }, [
+                        _vm._v("Likes:")
+                      ]),
+                      _c("i", {
+                        staticClass: "fas fa-heart",
+                        attrs: { "aria-hidden": "true" }
+                      }),
+                      _vm._v(" 94\n              ")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "gallery-item-comments" }, [
+                      _c("span", { staticClass: "visually-hidden" }, [
+                        _vm._v("Comments:")
+                      ]),
+                      _c("i", {
+                        staticClass: "fas fa-comment",
+                        attrs: { "aria-hidden": "true" }
+                      }),
+                      _vm._v(" 3\n              ")
+                    ])
+                  ])
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "gallery-item", attrs: { tabindex: "0" } },
+              [
+                _c("img", {
+                  staticClass: "gallery-image",
+                  attrs: {
+                    src:
+                      "https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=500&h=500&fit=crop",
+                    alt: ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "gallery-item-type" }, [
+                  _c("span", { staticClass: "visually-hidden" }, [
+                    _vm._v("Gallery")
+                  ]),
+                  _c("i", {
+                    staticClass: "fas fa-clone",
+                    attrs: { "aria-hidden": "true" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "gallery-item-info" }, [
+                  _c("ul", [
+                    _c("li", { staticClass: "gallery-item-likes" }, [
+                      _c("span", { staticClass: "visually-hidden" }, [
+                        _vm._v("Likes:")
+                      ]),
+                      _c("i", {
+                        staticClass: "fas fa-heart",
+                        attrs: { "aria-hidden": "true" }
+                      }),
+                      _vm._v(" 52\n              ")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "gallery-item-comments" }, [
+                      _c("span", { staticClass: "visually-hidden" }, [
+                        _vm._v("Comments:")
+                      ]),
+                      _c("i", {
+                        staticClass: "fas fa-comment",
+                        attrs: { "aria-hidden": "true" }
+                      }),
+                      _vm._v(" 4\n              ")
+                    ])
+                  ])
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "loader" })
         ])
       ])
     ])
