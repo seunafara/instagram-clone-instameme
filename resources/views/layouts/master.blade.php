@@ -828,7 +828,7 @@
                 to="/feed"
         >
             <i class="material-icons">sort</i>
-            <span class="bottom-navigation-label">Feeds</span>
+            <span class="bottom-navigation-label">Feed</span>
         </router-link>
 
         <router-link

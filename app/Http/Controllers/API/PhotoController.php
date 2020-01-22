@@ -97,7 +97,7 @@ class PhotoController extends Controller
         //
     }
 
-    public  function  likePhoto($id){
+    public  function  likePhoto(Request $request, $id){
 
 
 

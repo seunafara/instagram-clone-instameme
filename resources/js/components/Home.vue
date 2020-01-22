@@ -91,7 +91,7 @@
 
                    setTimeout(() => {
                        document.querySelector(`#lovelike${id}`).style.display = 'block';
-                       console.log('I worked');
+                       // console.log('I worked');
                    }, 1000);
 
                    setTimeout(() => {

@@ -2264,8 +2264,7 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
     likePhoto: function likePhoto(id, likes) {
       axios.put("api/photo/".concat(id)).then(function () {
         setTimeout(function () {
-          document.querySelector("#lovelike".concat(id)).style.display = 'block';
-          console.log('I worked');
+          document.querySelector("#lovelike".concat(id)).style.display = 'block'; // console.log('I worked');
         }, 1000);
         setTimeout(function () {
           document.querySelector("#lovelike".concat(id)).style.display = 'none';
