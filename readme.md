@@ -18,10 +18,11 @@ UI design added for Profile <br>
 Home Users Post Feeds <br>
 Upload new posts <br>
 User Profile setup <br>
+Like functionality <br>
+Infinite Scroll <br>
 
 
 ## What's Pending?
 Simple landing, login and registration page design <br>
-Like functionality <br>
-Infinite Scroll <br>
+
 

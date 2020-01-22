@@ -16,7 +16,9 @@ class PhotoController extends Controller
     public function index()
     {
         //
-        return Photo::with('user')->latest()->paginate(10);
+        $data = Photo::with('user')->latest()->paginate(5);
+        return response()->json($data);
+
     }
 
     /**
@@ -77,6 +79,11 @@ class PhotoController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $photo = Photo::findOrFail($id);
+
+        $photo->likes++;
+
+        $photo->update($request->all());
     }
 
     /**
@@ -88,6 +95,12 @@ class PhotoController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public  function  likePhoto($id){
+
+
+
     }
 
 

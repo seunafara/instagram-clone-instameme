@@ -139,7 +139,7 @@
 
         .instagram-feed .instagram-post {
             width: 100%;
-            height: 300px;
+            height: 100%;
             margin: 10px 0px;
         }
 

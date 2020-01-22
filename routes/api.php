@@ -17,6 +17,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::apiResources(['photo' => 'API\PhotoController']);
+//Route::get('/photo/{id}', 'API\PhotoController@likePhoto');
 
 
 Route::apiResources(['user' => 'API\UserController']);

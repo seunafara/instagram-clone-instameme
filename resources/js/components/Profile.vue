@@ -64,8 +64,10 @@
 
                  />
 
-            <div class="gallery-item-info">
-              <ul>
+                <div class="gallery-item-info">
+
+                  <ul>
+<!--                    <p>{{userpost.caption}}</p>-->
                   <li class="gallery-item-likes">
                   <span class="visually-hidden">Likes:</span
                   ><i class="fas fa-heart" aria-hidden="true"></i> {{userpost.likes}}
@@ -75,7 +77,9 @@
                   ><i class="fas fa-comment" aria-hidden="true"></i> 0
                   </li>
                 </ul>
-               </div>
+
+
+                </div>
              </div>
 
 

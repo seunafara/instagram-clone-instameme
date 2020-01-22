@@ -82,7 +82,6 @@
                 this.$Progress.start();
                 this.form.post('api/photo').then(() => {
                     this.form.reset();
-                    console.log('created');
                     // show sweet alert notification
                     // success
                     // Swalla.fire(

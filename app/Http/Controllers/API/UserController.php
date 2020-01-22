@@ -134,7 +134,7 @@ class UserController extends Controller
         $user = auth('api')->user();
 
 
-        $posts = Photo::latest()->where('user_id',$user->id)->paginate(5);
+        $posts = Photo::latest()->where('user_id',$user->id)->paginate(9);
 
 
         return $posts;
